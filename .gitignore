@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.*.backup
+
+# IDE
+.vscode/
+.idea/
+
+# Sensitive files
+secrets.tfvars
+*.tfvars
+!example.tfvars
