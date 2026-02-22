@@ -1,10 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-storage-elate" # REPLACE with your bucket name
-    key            = "terraform-iam-ec2/terraform.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-    dynamodb_table = "terraform-lock-table" # Optional: for state locking
+    bucket  = "devops-iam-demo-bucket-12345"
+    key     = "terraform-iam-ec2/terraform.tfstate"
+    region  = "us-east-1"
+    encrypt = true
   }
 }
 
