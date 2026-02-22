@@ -1,5 +1,5 @@
 provider "aws" {
-  region     = var.aws_region
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+  region = var.aws_region
+  # Use AWS credentials provided by environment variables, shared config, or
+  # GitHub Actions secrets (recommended). Do NOT hardcode credentials in Terraform variables.
 }
